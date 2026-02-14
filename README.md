@@ -88,9 +88,9 @@ cd bookmark-app
 
 ## Screenshots
 
-<img src="./assets/signin.png" alt="Signin-Page" width="400"/>
+<img src="./assets/signin-page.png" alt="Signin-Page" width="400"/>
 <img src="./assets/add-page.png" alt="Add Bookmark Page" width="400"/>
-<img src="./assets/view-page.png)" alt="View Bookmark Page" width="400"/>
+<img src="./assets/view-page.png" alt="View Bookmark Page" width="400"/>
 
 
 
