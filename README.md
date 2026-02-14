@@ -87,14 +87,12 @@ cd bookmark-app
 ---
 
 ## Screenshots
-### signin page :
-![Signin Page](./assets/signin-page.png)
 
-### Add Bookmark Page :
-![Add Bookmark Page](./assets/add-page.png)
+<img src="./assets/signin.png" alt="Signin-Page" width="400"/>
+<img src="./assets/add-page.png" alt="Add Bookmark Page" width="400"/>
+<img src="./assets/view-page.png)" alt="View Bookmark Page" width="400"/>
 
-### View Bookmarks Page:
-![Bookmarks List Page](./assets/view-page.png)
+
 
 
 - Replace the images in assets/ with your own screenshots.
@@ -108,29 +106,13 @@ cd bookmark-app
 
    **Solution**: Studied Supabase OAuth docs and implemented onAuthStateChange to manage sessions properly.
 
-2. Delete Function Failing
-
-   **Problem**: 
-        - Using supabase.auth.getUser() fetched the user once but didn’t keep the session in sync.
-        - DELETE requests failed silently due to RLS blocking anon users.
-        - Mixing auth logic and realtime caused inconsistencies; UI was manually updating state instead of relying on DB.
-        - Too many moving parts at once caused bugs.
-
-   **Solution**:
-
-        - Use onAuthStateChange as single source of truth for auth
-
-        - Let Supabase control session and handle real-time updates
-
-        - Fetch data from DB to drive UI instead of manual hacks
-
-3. Syntax Errors While Loading
+2. Syntax Errors While Loading
 
    **Problem**: Minor syntax errors caused UI breaks during development.
 
    **Solution**: Carefully debugged, fixed imports and state handling.
 
-4. Text Visibility in Different Themes
+3. Text Visibility in Different Themes
 
    **Problem**: When the app was viewed in light mode, some text was too dark; in dark mode, some text was barely visible.
 
