@@ -50,24 +50,22 @@ git clone https://github.com/nehakoyalkar18/bookmark-app.git
 cd bookmark-app
 
 2. Install dependencies
-npm install
+   - npm install
 
 3. Setup environment variables
 
-Create a .env.local file in the root folder and add your Supabase credentials:
+   - Create a .env.local file in the root folder and add your Supabase credentials:
 
-REACT_APP_SUPABASE_URL=your_supabase_url
-REACT_APP_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-
-⚠️ Note: Do not commit .env.local as it contains sensitive information.
+   - REACT_APP_SUPABASE_URL=your_supabase_url
+   - REACT_APP_SUPABASE_ANON_KEY=your_supabase_anon_key
+   - ⚠️ Note: Do not commit .env.local as it contains sensitive information.
 
 4. Start the development server
-npm start
+   - npm start
 
 5. Open the app
 
-Your app should now run at: http://localhost:3000
+   - Your app should now run at: http://localhost:3000
 
 ---
 
